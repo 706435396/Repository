@@ -22,8 +22,6 @@ mediaType = "application/json"
 category = "categories"
 tag = "tags"
 
-# 关闭无用页面类型，消除构建警告（保留分类taxonomy）
-[output]
 [output.html]
 disableKinds = ["RSS", "sitemap", "home.atom"]
 # 导航菜单全部英文

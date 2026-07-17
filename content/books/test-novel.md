@@ -1,8 +1,9 @@
 ---
 title: "Demon Lord Reborn"
 date: 2026-05-10T10:00:00Z
-cover: ""
-categories: ["Fantasy"]
+cover: "https://i.imgur.com/abc123.jpg"
+# 重点这一行，数组里添加 "Action"
+categories: ["Fantasy", "Action"]
 tags: ["Action", "Dark Fantasy", "Adventure"]
 wordcount: "98,500"
 format: "PDF"
