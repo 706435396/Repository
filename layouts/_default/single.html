@@ -1,21 +1,31 @@
 {{ define "main" }}
 <style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+main {
+  padding: 60px 20px;
+}
 .book-wrap {
   max-width: 1000px;
-  margin: 40px auto;
-  padding: 0 20px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 300px 1fr;
-  gap: 40px;
+  gap: 48px;
 }
 .book-cover {
   width: 100%;
   max-width: 300px;
   height: 450px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.14);
   object-fit: cover;
-  /* 无封面时渐变文字背景 */
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
   display: flex;
   align-items: center;
@@ -27,44 +37,68 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.5;
+  word-break: break-word;
 }
+.book-info h1 {
+  font-size: 36px;
+  color: #111;
+  margin-bottom: 16px;
+}
+.meta-line {
+  color: #555;
+  margin: 10px 0;
+  font-size: 16px;
+}
+.book-info h3 {
+  margin: 30px 0 12px;
+  font-size: 22px;
+  color: #222;
+}
+.desc {
+  line-height: 1.7;
+  font-size: 17px;
+  color: #333;
+}
+/* 购买按钮强化美化 */
 .buy-btn {
   display: inline-block;
-  background: #28a745;
+  background: #16a34a;
   color: white;
-  padding: 14px 30px;
-  border-radius: 6px;
+  padding: 16px 36px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  margin: 20px 0;
+  margin: 24px 0;
   font-size: 18px;
+  transition: background 0.2s;
+}
+.buy-btn:hover {
+  background: #15803d;
 }
 .preview-link {
   display: inline-block;
-  color: #0066cc;
+  color: #0369a1;
   text-decoration: underline;
   font-size: 16px;
 }
-.meta-line {
-  color: #666;
-  margin: 8px 0;
-}
-h1 {
-  margin-top: 0;
-}
-/* 适配手机端自动切换上下布局 */
+/* 手机端自动上下布局 */
 @media (max-width:768px) {
   .book-wrap {
     grid-template-columns: 1fr;
   }
-  .book-cover {
+  .book-cover-box {
     margin: 0 auto;
+  }
+  .book-info h1 {
+    font-size: 28px;
+  }
+  main {
+    padding: 40px 16px;
   }
 }
 </style>
 <div class="book-wrap">
   <div class="book-cover-box">
-    {{/* 封面逻辑：有图显示图、无图显示标题、图失效自动切换文字封面 */}}
     {{ if .Params.cover }}
     <img 
       src="{{ .Params.cover }}" 
@@ -89,7 +123,7 @@ h1 {
       {{ .Content }}
     </div>
 
-    <!-- Payhip购买弹窗按钮 -->
+    <!-- Payhip购买弹窗 -->
     <script src="https://payhip.com/payhip.js"></script>
     <a href="{{ .Params.payhip_url }}" class="payhip-buy-button buy-btn" data-theme="green">Buy Full PDF Ebook</a>
     <br>
