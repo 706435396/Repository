@@ -1,0 +1,19 @@
+{{ define "main" }}
+<style>
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  font-size: 17px;
+}
+h1 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+</style>
+<div class="container">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+</div>
+{{ end }}

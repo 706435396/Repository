@@ -1,24 +1,47 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Novel Ebook Store</title>
+		<title>Original Ebook Novels Store</title>
 		<link>http://localhost:1313/</link>
-		<description>Recent content on Novel Ebook Store</description>
+		<description>Recent content on Original Ebook Novels Store</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
+			<copyright>© 2026 All original novels, All rights reserved.</copyright>
 		
-			<lastBuildDate>Thu, 01 Jan 2026 12:00:00 +0000</lastBuildDate>
+		
+			<lastBuildDate>Sun, 10 May 2026 11:00:00 +0000</lastBuildDate>
 		
 			<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Demon Lord Reborn - Free Preview Chapter 1</title>
+				<link>http://localhost:1313/previews/demon-lord-preview/</link>
+				<pubDate>Sun, 10 May 2026 11:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/previews/demon-lord-preview/</guid>
+				<description>&lt;h1 id=&#34;chapter-1-the-fall-of-the-demon-castle&#34;&gt;Chapter 1: The Fall of the Demon Castle&lt;/h1&gt;&#xA;&lt;p&gt;The cold iron sword pierced his chest, black blood soaking the stone throne. The twelve knights he trusted stood before him, their blades stained with his loyal demon soldiers&amp;rsquo; blood.&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;I gave you everything,&amp;rdquo; the Demon Lord whispered, his vision fading fast. &amp;ldquo;Why?&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;&amp;ldquo;The human empire promised us gold and land,&amp;rdquo; the lead knight sneered. &amp;ldquo;Your dark rule ends today.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;As his consciousness slipped away, a faint ancient curse echoed in his soul: &lt;em&gt;I shall return, in flesh weak, power sealed, to burn this world anew.&lt;/em&gt;&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Demon Lord Reborn</title>
+				<link>http://localhost:1313/books/demo-book/</link>
+				<pubDate>Sun, 10 May 2026 10:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/books/demo-book/</guid>
+				<description>&lt;h3 id=&#34;book-introduction&#34;&gt;Book Introduction&lt;/h3&gt;&#xA;&lt;p&gt;After being betrayed by his twelve knights, the Demon Lord is reborn in the body of a weak village boy. He must hide his power, gather new followers, and take revenge on the empire that destroyed his kingdom.&lt;/p&gt;&#xA;&lt;p&gt;Full novel includes 28 chapters, complete ending, no cliffhangers.&lt;/p&gt;</description>
+			</item>
 			<item>
 				<title>Test Fantasy Novel</title>
 				<link>http://localhost:1313/books/test-novel/</link>
 				<pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/books/test-novel/</guid>
-				<description>&lt;h2 id=&#34;book-description&#34;&gt;Book Description&lt;/h2&gt;&#xA;&lt;p&gt;This is a test novel description.&lt;/p&gt;&#xA;&lt;!-- raw HTML omitted --&gt;</description>
+				<description>&lt;h2 id=&#34;book-description&#34;&gt;Book Description&lt;/h2&gt;&#xA;&lt;p&gt;This is a test novel description.&lt;/p&gt;&#xA;&lt;div style=&#34;margin:30px 0;&#34;&gt;&#xD;&#xA;&lt;a href=&#34;{{ .Params.payhip_url }}&#34; target=&#34;_blank&#34; style=&#34;background:#28a745;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:bold;&#34;&gt;Buy Full Ebook&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;a href=&#34;{{ .Params.preview_url }}&#34;&gt;Read Free Preview&lt;/a&gt;</description>
+			</item>
+			<item>
+				<title>Privacy Policy</title>
+				<link>http://localhost:1313/privacy-policy/</link>
+				<pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/privacy-policy/</guid>
+				<description>&lt;h1 id=&#34;privacy-policy&#34;&gt;Privacy Policy&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Data Collection&#xA;We do not collect your personal information on this website. All payment data is processed via Payhip, please review Payhip&amp;rsquo;s privacy policy for transaction details.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Cookies&#xA;This static website only uses minimal cookies provided by Cloudflare Pages for security and access statistics.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Intellectual Property&#xA;All novels, cover art and text on this site are original copyrighted works. No reproduction or redistribution without written permission.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Contact&#xA;For copyright or support inquiries, contact via Payhip store message.&lt;/p&gt;</description>
 			</item>
 	</channel>
 </rss>

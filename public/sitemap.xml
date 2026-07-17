@@ -2,25 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/action/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/books/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/fantasy/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/previews/demon-lord-preview/</loc>
+    <lastmod>2026-05-10T11:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2026-05-10T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/previews/</loc>
+    <lastmod>2026-05-10T11:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/action/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/adventure/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/books/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/dark-fantasy/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/books/demo-book/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/fantasy/</loc>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-01-01T12:00:00+00:00</lastmod>
+    <lastmod>2026-05-10T10:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/books/test-novel/</loc>
     <lastmod>2026-01-01T12:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/privacy-policy/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

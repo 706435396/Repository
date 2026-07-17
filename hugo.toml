@@ -1,11 +1,61 @@
+# 站点基础配置
 baseURL = "https://repository-wbw.pages.dev/"
-title = "Novel Ebook Store"
+locale = "en-us" # 替换废弃的 languageCode
+title = "Original Ebook Novels Store"
 theme = "ananke"
-locale = "en-us"
+copyright = "© 2026 All original novels, All rights reserved."
 
+# 屏蔽HTML警告
+ignoreLogs = ['warning-goldmark-raw-html']
+
+# Markdown开启原生HTML渲染（解决a标签被过滤）
+[markup.goldmark.renderer]
+unsafe = true
+
+# 站点描述SEO
 [params]
-description = "Original English novels, download PDF ebook"
+description = "Buy original English fantasy, action, adventure novels in PDF format, instant download after payment."
+author = "Novel Author"
 
+# 开启JSON搜索索引
+[outputFormats]
+[outputFormats.search]
+baseName = "search"
+isPlainText = false
+mediaType = "application/json"
+
+# 分类/标签体系
 [taxonomies]
 category = "categories"
 tag = "tags"
+
+# 关闭无用页面类型，消除构建警告
+[output]
+[output.html]
+disableKinds = ["RSS", "sitemap", "home.atom"]
+
+# 导航栏菜单
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "Fantasy"
+url = "/categories/fantasy/"
+weight = 2
+
+[[menu.main]]
+name = "Action"
+url = "/categories/action/"
+weight = 3
+
+[[menu.main]]
+name = "Free Previews"
+url = "/previews/"
+weight = 4
+
+[[menu.main]]
+name = "Privacy Policy"
+url = "/privacy-policy/"
+weight = 5
