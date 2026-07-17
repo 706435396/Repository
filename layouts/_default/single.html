@@ -8,9 +8,25 @@
   grid-template-columns: 300px 1fr;
   gap: 40px;
 }
-.book-cover img {
+.book-cover {
   width: 100%;
+  max-width: 300px;
+  height: 450px;
   border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  object-fit: cover;
+  /* 无封面时渐变文字背景 */
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .buy-btn {
   display: inline-block;
@@ -36,10 +52,30 @@
 h1 {
   margin-top: 0;
 }
+/* 适配手机端自动切换上下布局 */
+@media (max-width:768px) {
+  .book-wrap {
+    grid-template-columns: 1fr;
+  }
+  .book-cover {
+    margin: 0 auto;
+  }
+}
 </style>
 <div class="book-wrap">
-  <div class="book-cover">
-    <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+  <div class="book-cover-box">
+    {{/* 封面逻辑：有图显示图、无图显示标题、图失效自动切换文字封面 */}}
+    {{ if .Params.cover }}
+    <img 
+      src="{{ .Params.cover }}" 
+      alt="{{ .Title }}"
+      class="book-cover"
+      loading="lazy"
+      onerror="this.onerror=null; this.outerHTML='<div class=&quot;book-cover&quot;>{{ .Title }}</div>'"
+    >
+    {{ else }}
+    <div class="book-cover">{{ .Title }}</div>
+    {{ end }}
   </div>
   <div class="book-info">
     <h1>{{ .Title }}</h1>
@@ -61,11 +97,3 @@ h1 {
   </div>
 </div>
 {{ end }}
-.book-cover img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px #ccc;
-}
