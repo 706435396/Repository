@@ -1,7 +1,7 @@
 ---
 title: "Demon Lord Reborn"
 date: 2026-05-10T10:00:00Z
-cover: "https://i.imgur.com/abc123.jpg"
+cover: "https://i.imgur.com/tX7zYQH.jpg"
 categories: ["Fantasy"]
 tags: ["Action", "Dark Fantasy", "Adventure"]
 wordcount: "98,500"

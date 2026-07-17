@@ -190,7 +190,6 @@
 
 <main class="pb7" role="main">
 <style>
- 
 main {
   padding: 40px 0;
   background-color: #f5f5f5;
@@ -210,11 +209,13 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 36px;
+  justify-items: center;
 }
 .book-card {
+  width: 100%;
+  max-width: 180px;
   text-align: center;
 }
- 
 .book-card img {
   width: 100%;
   height: 270px;
@@ -222,7 +223,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transition: transform 0.25s ease;
-  background: #ddd;
+  background: #dddddd;
 }
 .book-card img:hover {
   transform: translateY(-6px);
@@ -241,14 +242,14 @@ h2 {
     
     <div class="book-card">
       <a href="/books/demo-book/">
-        <img src="https://i.imgur.com/abc123.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy">
+        <img src="https://i.imgur.com/tX7zYQH.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy" onerror="this.style.display='none'">
         <p>Demon Lord Reborn</p>
       </a>
     </div>
     
     <div class="book-card">
       <a href="/books/test-novel/">
-        <img src="https://i.imgur.com/abc123.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy">
+        <img src="https://i.imgur.com/tX7zYQH.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy" onerror="this.style.display='none'">
         <p>Demon Lord Reborn</p>
       </a>
     </div>

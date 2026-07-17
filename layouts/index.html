@@ -1,6 +1,5 @@
 {{ define "main" }}
 <style>
-/* 全局页面边距重置 */
 main {
   padding: 40px 0;
   background-color: #f5f5f5;
@@ -15,16 +14,18 @@ h2 {
   font-size: 24px;
   color: #222;
 }
-/* 修复网格布局，自动均分多列 */
+/* 自适应多列网格，屏幕宽自动增加列数 */
 .book-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 36px;
+  justify-items: center;
 }
 .book-card {
+  width: 100%;
+  max-width: 180px;
   text-align: center;
 }
-/* 强制图片宽高、防止失效变形 */
 .book-card img {
   width: 100%;
   height: 270px;
@@ -32,7 +33,7 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   transition: transform 0.25s ease;
-  background: #ddd;
+  background: #dddddd;
 }
 .book-card img:hover {
   transform: translateY(-6px);
@@ -51,7 +52,7 @@ h2 {
     {{ range $allBooks }}
     <div class="book-card">
       <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.cover }}" alt="{{ .Title }} Book Cover" loading="lazy">
+        <img src="{{ .Params.cover }}" alt="{{ .Title }} Book Cover" loading="lazy" onerror="this.style.display='none'">
         <p>{{ .Title }}</p>
       </a>
     </div>
