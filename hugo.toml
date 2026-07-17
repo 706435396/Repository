@@ -2,7 +2,7 @@ baseURL = "https://repository-wbw.pages.dev/"
 locale = "en-us"
 title = "Original Ebook Novel Store"
 theme = "ananke"
-copyright = "© 2026 All Original Novels. All Rights Reserved."
+copyright = "©  All Original Novels. All Rights Reserved."
 
 ignoreLogs = ['warning-goldmark-raw-html']
 [markup.goldmark.renderer]

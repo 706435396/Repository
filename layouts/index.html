@@ -14,17 +14,18 @@ h2 {
   font-size: 24px;
   color: #222;
 }
-/* 自适应多列网格，屏幕宽自动增加列数 */
 .book-grid {
   display: grid;
+  /* 自动填充：最小180px一列，剩余空间均分 */
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 36px;
-  justify-items: center;
+  width: 100%;
 }
 .book-card {
   width: 100%;
   max-width: 180px;
   text-align: center;
+  margin: 0 auto;
 }
 .book-card img {
   width: 100%;
@@ -52,7 +53,12 @@ h2 {
     {{ range $allBooks }}
     <div class="book-card">
       <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.cover }}" alt="{{ .Title }} Book Cover" loading="lazy" onerror="this.style.display='none'">
+        <img 
+          src="{{ .Params.cover }}" 
+          alt="{{ .Title }} Book Cover" 
+          loading="lazy"
+          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22270%22><rect width=%22100%22 height=%22100%22 fill=%22%23dddddd%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 fill=%22%23666%22>Cover Unavailable</text></svg>'"
+        >
         <p>{{ .Title }}</p>
       </a>
     </div>

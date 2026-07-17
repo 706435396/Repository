@@ -204,17 +204,18 @@ h2 {
   font-size: 24px;
   color: #222;
 }
- 
 .book-grid {
   display: grid;
+   
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 36px;
-  justify-items: center;
+  width: 100%;
 }
 .book-card {
   width: 100%;
   max-width: 180px;
   text-align: center;
+  margin: 0 auto;
 }
 .book-card img {
   width: 100%;
@@ -242,14 +243,24 @@ h2 {
     
     <div class="book-card">
       <a href="/books/demo-book/">
-        <img src="https://i.imgur.com/tX7zYQH.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy" onerror="this.style.display='none'">
+        <img 
+          src="https://i.imgur.com/tX7zYQH.jpg" 
+          alt="Demon Lord Reborn Book Cover" 
+          loading="lazy"
+          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22270%22><rect width=%22100%22 height=%22100%22 fill=%22%23dddddd%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 fill=%22%23666%22>Cover Unavailable</text></svg>'"
+        >
         <p>Demon Lord Reborn</p>
       </a>
     </div>
     
     <div class="book-card">
       <a href="/books/test-novel/">
-        <img src="https://i.imgur.com/tX7zYQH.jpg" alt="Demon Lord Reborn Book Cover" loading="lazy" onerror="this.style.display='none'">
+        <img 
+          src="https://i.imgur.com/tX7zYQH.jpg" 
+          alt="Demon Lord Reborn Book Cover" 
+          loading="lazy"
+          onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22180%22 height=%22270%22><rect width=%22100%22 height=%22100%22 fill=%22%23dddddd%22/><text x=%2250%%22 y=%2250%%22 text-anchor=%22middle%22 fill=%22%23666%22>Cover Unavailable</text></svg>'"
+        >
         <p>Demon Lord Reborn</p>
       </a>
     </div>
@@ -259,7 +270,7 @@ h2 {
 </main><footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
-    &copy;  © 2026 All Original Novels. All Rights Reserved. 2026 
+    &copy;  ©  All Original Novels. All Rights Reserved. 2026 
   </a>
     <div><div class="ananke-socials"></div>
 </div>
