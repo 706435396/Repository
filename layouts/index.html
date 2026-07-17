@@ -1,48 +1,57 @@
 {{ define "main" }}
 <style>
-/* 书籍网格样式 */
+/* 全局页面边距重置 */
+main {
+  padding: 40px 0;
+  background-color: #f5f5f5;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+h2 {
+  margin-bottom: 32px;
+  font-size: 24px;
+  color: #222;
+}
+/* 修复网格布局，自动均分多列 */
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 28px;
-  margin: 40px 0;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 36px;
 }
 .book-card {
   text-align: center;
 }
+/* 强制图片宽高、防止失效变形 */
 .book-card img {
   width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px #ddd;
-  transition: 0.2s;
+  height: 270px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: transform 0.25s ease;
+  background: #ddd;
 }
 .book-card img:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px);
 }
 .book-card p {
-  margin-top: 10px;
+  margin-top: 12px;
   font-weight: 500;
-}
-h2 {
-  margin-top: 50px;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 10px;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  color: #111;
+  font-size: 15px;
 }
 </style>
 <div class="container">
   <h2>New Released Novels</h2>
   <div class="book-grid">
-    {{/* 修正sort语法，先过滤再排序 */}}
     {{ $allBooks := sort (where .Site.RegularPages "Section" "books") "Date" "desc" }}
     {{ range $allBooks }}
     <div class="book-card">
       <a href="{{ .RelPermalink }}">
-        <img src="{{ .Params.cover }}" alt="{{ .Title }} Book Cover">
+        <img src="{{ .Params.cover }}" alt="{{ .Title }} Book Cover" loading="lazy">
         <p>{{ .Title }}</p>
       </a>
     </div>

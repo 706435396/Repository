@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
-		<title>Action on Original Ebook Novels Store</title>
+		<title>Action on Original Ebook Novel Store</title>
 		<link>http://localhost:1313/tags/action/</link>
-		<description>Recent content in Action on Original Ebook Novels Store</description>
+		<description>Recent content in Action on Original Ebook Novel Store</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
 		
 		
 		
-			<copyright>© 2026 All original novels, All rights reserved.</copyright>
+			<copyright>© 2026 All Original Novels. All Rights Reserved.</copyright>
 		
 		
 			<lastBuildDate>Sun, 10 May 2026 10:00:00 +0000</lastBuildDate>
@@ -23,9 +23,9 @@
 				<description>&lt;h3 id=&#34;book-introduction&#34;&gt;Book Introduction&lt;/h3&gt;&#xA;&lt;p&gt;After being betrayed by his twelve knights, the Demon Lord is reborn in the body of a weak village boy. He must hide his power, gather new followers, and take revenge on the empire that destroyed his kingdom.&lt;/p&gt;&#xA;&lt;p&gt;Full novel includes 28 chapters, complete ending, no cliffhangers.&lt;/p&gt;</description>
 			</item>
 			<item>
-				<title>Test Fantasy Novel</title>
+				<title>Demon Lord Reborn</title>
 				<link>http://localhost:1313/books/test-novel/</link>
-				<pubDate>Thu, 01 Jan 2026 12:00:00 +0000</pubDate>
+				<pubDate>Sun, 10 May 2026 10:00:00 +0000</pubDate>
 				<guid>http://localhost:1313/books/test-novel/</guid>
 				<description>&lt;h2 id=&#34;book-description&#34;&gt;Book Description&lt;/h2&gt;&#xA;&lt;p&gt;This is a test novel description.&lt;/p&gt;&#xA;&lt;div style=&#34;margin:30px 0;&#34;&gt;&#xD;&#xA;&lt;a href=&#34;{{ .Params.payhip_url }}&#34; target=&#34;_blank&#34; style=&#34;background:#28a745;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:bold;&#34;&gt;Buy Full Ebook&lt;/a&gt;&#xD;&#xA;&lt;/div&gt;&#xD;&#xA;&lt;a href=&#34;{{ .Params.preview_url }}&#34;&gt;Read Free Preview&lt;/a&gt;</description>
 			</item>

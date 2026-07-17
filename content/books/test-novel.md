@@ -1,13 +1,13 @@
 ---
-title: "Test Fantasy Novel"
-date: 2026-01-01T12:00:00Z
-cover: "https://i.imgur.com/demo.jpg"
+title: "Demon Lord Reborn"
+date: 2026-05-10T10:00:00Z
+cover: "https://i.imgur.com/abc123.jpg"
 categories: ["Fantasy"]
-tags: ["Action"]
-wordcount: "60,000"
+tags: ["Action", "Dark Fantasy", "Adventure"]
+wordcount: "98,500"
 format: "PDF"
-payhip_url: "https://payhip.com/b/demo"
-preview_url: "#"
+payhip_url: "https://payhip.com/b/XXXXXXXX"
+preview_url: "/previews/demon-lord-preview/"
 ---
 
 ## Book Description
