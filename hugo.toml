@@ -1,4 +1,4 @@
-baseURL = "https://xxx.pages.dev/"
+baseURL = "https://repository-wbw.pages.dev/"
 title = "Novel Ebook Store"
 theme = "ananke"
 locale = "en-us"
