@@ -1,0 +1,23 @@
+{{ define "main" }}
+<style>
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax:160px,1fr);gap:24px;margin:30px 0;}
+.book-item{text-align:center;}
+.book-item img{max-width:100%;border-radius:6px;}
+.book-item a{text-decoration:none;color:#222;}
+</style>
+
+<div class="container">
+<h1>New Releases</h1>
+<div class="book-grid">
+{{ $books := where .Site.RegularPages "Section" "books" | first 16 }}
+{{ range $books }}
+<div class="book-item">
+<a href="{{ .RelPermalink }}">
+<img src="{{ .Params.cover }}" alt="{{ .Title }}">
+<p>{{ .Title }}</p>
+</a>
+</div>
+{{ end }}
+</div>
+</div>
+{{ end }}

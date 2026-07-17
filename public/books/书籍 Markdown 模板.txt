@@ -1,0 +1,24 @@
+---
+title: "Demon World Novel"
+date: 2026-01-01T12:00:00Z
+cover: "https://i.imgur.com/xxxx.jpg"
+categories: ["Fantasy"]
+tags: ["Action","Adventure"]
+wordcount: "95,000"
+format: "PDF"
+payhip_url: "https://payhip.com/b/XXXXXXX"
+preview_url: "https://【试读页面链接】"
+---
+
+## Book Description
+Write your novel English introduction here.
+
+## Book Info
+- Word Count: {{ .Params.wordcount }}
+- Format: {{ .Params.format }}
+
+<div style="margin:30px 0;">
+<a href="{{ .Params.payhip_url }}" target="_blank" style="background:#28a745;color:white;padding:12px 24px;border-radius:4px;text-decoration:none;font-weight:bold;">Buy Full Ebook</a>
+</div>
+
+<a href="{{ .Params.preview_url }}" target="_blank">Read Free Preview</a>

@@ -1,0 +1,11 @@
+baseURL = "https://xxx.pages.dev/"
+title = "Novel Ebook Store"
+theme = "ananke"
+locale = "en-us"
+
+[params]
+description = "Original English novels, download PDF ebook"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
