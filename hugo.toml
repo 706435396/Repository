@@ -3,7 +3,6 @@ locale = "en-us"
 title = "Original Ebook Novel Store"
 theme = "ananke"
 copyright = "© 2026 All Original Novels. All Rights Reserved."
-
 ignoreLogs = ['warning-goldmark-raw-html']
 [markup.goldmark.renderer]
 unsafe = true
@@ -24,6 +23,7 @@ tag = "tags"
 
 [output.html]
 disableKinds = ["RSS", "sitemap", "home.atom"]
+
 # 导航菜单全部英文
 [[menu.main]]
 name = "Home"
